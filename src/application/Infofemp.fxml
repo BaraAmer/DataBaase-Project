@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="900.0" prefWidth="1700.0" style="-fx-background-color: #f1e7d7;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Infofemp">
+   <children>
+      <TextField fx:id="txt_search" layoutX="296.0" layoutY="252.0" prefHeight="38.0" prefWidth="232.0" promptText="Search with id or Name" />
+      <TableView fx:id="temp" editable="true" layoutX="15.0" layoutY="325.0" prefHeight="284.0" prefWidth="794.0">
+        <columns>
+          <TableColumn fx:id="eid" prefWidth="62.000030517578125" text="ID " />
+          <TableColumn fx:id="ename" prefWidth="105.0" text="Name" />
+            <TableColumn fx:id="specialization" prefWidth="77.0" text="Specialization" />
+            <TableColumn fx:id="address" prefWidth="44.000030517578125" text="address" />
+            <TableColumn fx:id="birthdate" minWidth="4.0" prefWidth="47.0" text="birth date" />
+            <TableColumn fx:id="evaluation" prefWidth="37.0" text="evaluation" />
+            <TableColumn fx:id="gender" prefWidth="44.0" text="gender" />
+            <TableColumn fx:id="nofexperiancess" prefWidth="66.0" text="#OfExperiance" />
+            <TableColumn fx:id="salary" prefWidth="46.0" text="salary" />
+            <TableColumn fx:id="taxvalue" prefWidth="38.0" text="tax value" />
+            <TableColumn fx:id="dayoffice" prefWidth="58.0" text="day office " />
+            <TableColumn fx:id="dnumber" minWidth="4.0" prefWidth="39.0" text="Dnumber" />
+            <TableColumn fx:id="phone1" prefWidth="63.0" text="phone1" />
+            <TableColumn fx:id="phone2" prefWidth="68.0" text="phone2" />
+        </columns>
+      </TableView>
+      <Label layoutX="857.0" layoutY="93.0" text="Name :">
+         <font>
+            <Font name="Britannic Bold" size="36.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txt_name" alignment="CENTER" layoutX="1009.0" layoutY="84.0" prefHeight="53.0" prefWidth="353.0">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font></TextField>
+      <VBox layoutX="912.0" layoutY="187.0" prefHeight="550.0" prefWidth="173.0" spacing="29.0">
+         <children>
+            <Label prefHeight="21.0" prefWidth="69.0" text="ID :">
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+               <padding>
+                  <Insets left="20.0" top="10.0" />
+               </padding>
+               <font>
+                  <Font name="Britannic Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label text="specialization :">
+               <font>
+                  <Font name="Britannic Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label text="Address :">
+               <font>
+                  <Font name="Britannic Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label prefHeight="30.0" prefWidth="109.0" text="Birth Date :">
+               <font>
+                  <Font name="Britannic Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label text="Gender : ">
+               <font>
+                  <Font name="Britannic Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label text="Evaluation : ">
+               <font>
+                  <Font name="Britannic Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label text="#Of Experiance :">
+               <font>
+                  <Font name="Britannic Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label text="Salary :">
+               <font>
+                  <Font name="Britannic Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label text="Tax Value : ">
+               <font>
+                  <Font name="Britannic Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label text="Day office : ">
+               <font>
+                  <Font name="Britannic Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label prefHeight="30.0" prefWidth="201.0" text="#Of Department :">
+               <font>
+                  <Font name="Britannic Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label text="Phones :">
+               <font>
+                  <Font name="Britannic Bold" size="20.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+      <VBox layoutX="1134.0" layoutY="194.0" prefHeight="546.0" prefWidth="251.0" spacing="20.0">
+         <children>
+            <TextField fx:id="text_id" alignment="CENTER">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font></TextField>
+            <TextField fx:id="txt_sp" alignment="CENTER">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font></TextField>
+            <TextField fx:id="txt_address" alignment="CENTER">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font></TextField>
+            <TextField fx:id="txt_bdate" alignment="CENTER">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font></TextField>
+            <TextField fx:id="txt_gender" alignment="CENTER">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font></TextField>
+            <TextField fx:id="txt_eva" alignment="CENTER">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font></TextField>
+            <TextField fx:id="txt_exper" alignment="CENTER">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font></TextField>
+            <TextField fx:id="txt_sal" alignment="CENTER">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font></TextField>
+            <TextField fx:id="txt_tax" alignment="CENTER">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font></TextField>
+            <TextField fx:id="txt_doff" alignment="CENTER">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font></TextField>
+            <TextField fx:id="txt_nofdep" alignment="CENTER">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font></TextField>
+         </children>
+      </VBox>
+      <Line endX="-100.0" endY="-713.0" fill="#dcff5d" layoutX="930.0" layoutY="806.0" smooth="false" startX="-100.0" stroke="#282525" strokeWidth="0.5" />
+      <Separator layoutX="850.0" layoutY="156.0" prefHeight="7.0" prefWidth="218.0" />
+      <Button fx:id="btn_addemp" layoutX="1464.0" layoutY="187.0" mnemonicParsing="false" onAction="#AddE" prefHeight="38.0" prefWidth="182.0" style="-fx-background-color: #58b562; -fx-text-fill: white; -fx-background-radius: 15;" text="Add Employee">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></Button>
+      <Button fx:id="btn_demp" layoutX="1464.0" layoutY="244.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="182.0" style="-fx-background-color: #58b562; -fx-text-fill: white; -fx-background-radius: 15;" text="Delete Employee" textFill="#58b562">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></Button>
+      <ImageView fitHeight="153.0" fitWidth="210.0" layoutX="604.0" layoutY="149.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../image2.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="btnbac" layoutX="56.0" layoutY="819.0" mnemonicParsing="false" onAction="#backtohome" prefHeight="31.0" prefWidth="153.0" style="-fx-text-fill: white; -fx-background-radius: 15; -fx-background-color: #58b562;" text="Back">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></Button>
+      <TextField fx:id="p1" layoutX="1058.0" layoutY="750.0" prefHeight="31.0" prefWidth="153.0" promptText="Mandatory">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></TextField>
+      <Label layoutX="1220.0" layoutY="751.0" text="OR" textFill="#c64a27">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="p2" layoutX="1260.0" layoutY="750.0" prefHeight="31.0" prefWidth="153.0" promptText="optional(-)">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></TextField>
+      <Label layoutX="64.0" layoutY="252.0" prefHeight="38.0" prefWidth="232.0" text="Search about Employee :">
+         <font>
+            <Font name="Bodoni MT Bold" size="20.0" />
+         </font>
+      </Label>
+      <Button fx:id="btn_clear" layoutX="1464.0" layoutY="303.0" mnemonicParsing="false" onAction="#ClearTs" prefHeight="38.0" prefWidth="182.0" style="-fx-background-color: #58b562; -fx-text-fill: white; -fx-background-radius: 15;" text="Clear all Fields ">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></Button>
+      <Label layoutX="912.0" layoutY="807.0" text="Children :">
+         <font>
+            <Font name="Britannic Bold" size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txt_child" alignment="CENTER" layoutX="1058.0" layoutY="803.0" prefHeight="31.0" prefWidth="153.0">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></TextField>
+      <Label layoutX="24.0" layoutY="665.0" text="Transcation inside Company :">
+         <font>
+            <Font name="Bodoni MT Bold" size="20.0" />
+         </font>
+      </Label>
+      <Button layoutX="1228.0" layoutY="803.0" mnemonicParsing="false" onAction="#updateChildren" text="update" textFill="#c64a27">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></Button>
+      <Button fx:id="btn_tod" layoutX="23.0" layoutY="704.0" mnemonicParsing="false" onAction="#btn_todepar" prefHeight="46.0" prefWidth="360.0" style="-fx-background-radius: 20;" text="Go to Departments " textFill="#901616">
+         <font>
+            <Font name="Bodoni MT Bold" size="20.0" />
+         </font></Button>
+      <Label alignment="CENTER" layoutX="23.0" layoutY="57.0" prefHeight="95.0" prefWidth="514.0" style="-fx-background-color: #58b562; -fx-text-fill: white; -fx-background-radius: 25;" text="Information of Employees :" textFill="#f1e7d7">
+         <font>
+            <Font name="Bodoni MT Bold" size="37.0" />
+         </font></Label>
+      <Label fx:id="eeror" alignment="CENTER" layoutX="1409.0" layoutY="26.0" prefHeight="36.0" prefWidth="273.0" style="-fx-background-color: white; -fx-background-radius: 15;" text=" Sory, there an error" textFill="#d74d4d" visible="false">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Button alignment="CENTER" layoutX="496.0" layoutY="632.0" mnemonicParsing="false" onAction="#moeM" prefHeight="46.0" prefWidth="303.0" style="-fx-background-color: #58b562; -fx-text-fill: white; -fx-background-radius: 20;" text="Most employee has experience">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Button>
+      <TextField fx:id="txt_moseM" alignment="CENTER" layoutX="500.0" layoutY="689.0" prefHeight="31.0" prefWidth="296.0">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font></TextField>
+   </children>
+</AnchorPane>

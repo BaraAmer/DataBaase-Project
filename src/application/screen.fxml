@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="815.0" prefWidth="1206.0" style="-fx-background-color: #EFFCAB;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.screen">
+   <children>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="169.0" layoutY="33.0" prefHeight="82.0" prefWidth="463.0" text=" Students Information  " textFill="#ba7916" textOverrun="LEADING_WORD_ELLIPSIS" underline="true">
+         <font>
+            <Font name="System Bold" size="29.0" />
+         </font>
+         <effect>
+            <Glow />
+         </effect>
+         <cursor>
+            <Cursor fx:constant="N_RESIZE" />
+         </cursor>
+      </Label>
+      <TableView fx:id="taview" editable="true" layoutX="75.0" layoutY="122.0" prefHeight="360.0" prefWidth="662.0">
+        <columns>
+          <TableColumn fx:id="t1" prefWidth="134.0" text="ID_Student" />
+          <TableColumn fx:id="t2" prefWidth="107.0" text="Name" />
+            <TableColumn fx:id="t3" minWidth="0.0" prefWidth="129.0" text="ID_Trainer" />
+            <TableColumn fx:id="t4" minWidth="0.0" prefWidth="82.0" text="Year" />
+            <TableColumn fx:id="t5" prefWidth="209.0" text="Phone" />
+        </columns>
+      </TableView>
+      <TextField fx:id="txt_ids" layoutX="89.0" layoutY="523.0" prefHeight="31.0" prefWidth="122.0" promptText="ID_Student" />
+      <TextField fx:id="txt_year" layoutX="92.0" layoutY="578.0" prefHeight="31.0" prefWidth="122.0" promptText="Year" />
+      <TextField fx:id="txt_idt" layoutX="236.0" layoutY="578.0" prefHeight="31.0" prefWidth="122.0" promptText="ID_Trainer" />
+      <TextField fx:id="txt_name" layoutX="236.0" layoutY="523.0" prefHeight="31.0" prefWidth="122.0" promptText="Name" />
+      <TextField fx:id="txt_phone" layoutX="436.0" layoutY="554.0" prefHeight="31.0" prefWidth="279.0" promptText="Phone" />
+      
+      <HBox layoutX="90.0" layoutY="655.0" prefHeight="42.0" prefWidth="648.0" spacing="40.0">
+         <children>
+            <Button fx:id="btn_add" mnemonicParsing="false" prefHeight="36.0" prefWidth="130.0" style="-fx-background-radius: 15px;" text="Add" />
+            <Button fx:id="btn_dele" mnemonicParsing="false" prefHeight="36.0" prefWidth="130.0" style="-fx-background-radius: 15px;" text="Delete" />
+            <Button fx:id="btn_ref" mnemonicParsing="false" prefHeight="36.0" prefWidth="130.0" style="-fx-background-radius: 15px;" text="Refrech" />
+            <Button fx:id="btn_clear" mnemonicParsing="false" prefHeight="36.0" prefWidth="130.0" style="-fx-background-radius: 15px;" text="Cleaer All" />
+         </children>
+      </HBox>
+      <Button layoutX="951.0" layoutY="711.0" mnemonicParsing="false" onAction="#backhomepage" prefHeight="36.0" prefWidth="156.0" style="-fx-background-radius: 15;" text="Back" />
+      <Label alignment="CENTER" layoutX="770.0" layoutY="139.0" prefHeight="63.0" prefWidth="305.0" text="Number of students in this Year:">
+         <font>
+            <Font name="System Bold Italic" size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txt_n_year" alignment="CENTER" layoutX="819.0" layoutY="211.0" />
+      <Label layoutX="756.0" layoutY="272.0" prefHeight="63.0" prefWidth="418.0" text="Number of students which this Trainer train:">
+         <font>
+            <Font name="System Bold Italic" size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txt_n_tr" alignment="CENTER" layoutX="819.0" layoutY="343.0" />
+      <Label fx:id="eror3" alignment="CENTER" layoutX="916.0" layoutY="53.0" prefHeight="36.0" prefWidth="224.0" style="-fx-background-color: white;" text="Sory, There an error" textFill="#b93c3c" visible="false">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

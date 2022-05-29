@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="900.0" prefWidth="1600.0" style="-fx-background-color: #f0faff;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.department">
+   <children>
+      <Label alignment="CENTER" layoutX="51.0" layoutY="46.0" prefHeight="81.0" prefWidth="746.0" style="-fx-background-radius: 30; -fx-text-fill: Black;" text="Movements of employees within the company : ">
+         <font>
+            <Font name="Bodoni MT Bold" size="36.0" />
+         </font>
+      </Label>
+      <Label layoutX="111.0" layoutY="207.0" prefHeight="43.0" prefWidth="86.0" text="Name :">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="l_name" alignment="CENTER" layoutX="206.0" layoutY="208.0" prefHeight="43.0" prefWidth="184.0" style="-fx-border-color: green;" textFill="#94360e">
+         <font>
+            <Font size="20.0" />
+         </font></Label>
+      <Label layoutX="412.0" layoutY="208.0" prefHeight="43.0" prefWidth="35.0" text="ID :">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="l_id" alignment="CENTER" layoutX="476.0" layoutY="208.0" prefHeight="43.0" prefWidth="184.0" style="-fx-border-color: green;" textFill="#94360e">
+         <font>
+            <Font size="20.0" />
+         </font></Label>
+      <Label layoutX="111.0" layoutY="282.0" text="This Employee works in : ">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="l_ndep" alignment="CENTER" layoutX="126.0" layoutY="337.0" prefHeight="35.0" prefWidth="163.0" style="-fx-border-color: green;" textFill="#94360e">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="313.0" layoutY="337.0" prefHeight="35.0" prefWidth="137.0" text="Departmnent">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="111.0" layoutY="412.0" prefHeight="35.0" prefWidth="116.0" text="In Location :">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="l_loca" alignment="CENTER" layoutX="267.0" layoutY="412.0" prefHeight="35.0" prefWidth="193.0" style="-fx-border-color: green;" textFill="#94360e">
+         <font>
+            <Font size="20.0" />
+         </font></Label>
+      <Label layoutX="111.0" layoutY="488.0" prefHeight="35.0" prefWidth="116.0" text="Manager :">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="107.0" layoutY="561.0" text="Start Manage :">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <TableView fx:id="tdep" editable="true" layoutX="805.0" layoutY="205.0" prefHeight="283.0" prefWidth="680.0">
+        <columns>
+          <TableColumn fx:id="t1" prefWidth="186.0" text="Number Of Department" />
+          <TableColumn fx:id="t2" minWidth="1.0" prefWidth="163.0" text="Name Of Department" />
+            <TableColumn fx:id="t3" prefWidth="102.0" text="Manager " />
+            <TableColumn fx:id="t4" prefWidth="92.0" text="Location" />
+            <TableColumn fx:id="t5" prefWidth="136.0" text="Start Manage" />
+        </columns>
+      </TableView>
+      <Label layoutX="794.0" layoutY="618.0" prefHeight="52.0" prefWidth="408.0" text="Number of Employees in this Department : ">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="l_mana" alignment="CENTER" layoutX="267.0" layoutY="488.0" prefHeight="35.0" prefWidth="193.0" style="-fx-border-color: green;" textFill="#94360e">
+         <font>
+            <Font size="20.0" />
+         </font></Label>
+      <Label fx:id="l_startman" alignment="CENTER" layoutX="267.0" layoutY="559.0" prefHeight="35.0" prefWidth="193.0" style="-fx-border-color: green;" textFill="#94360e">
+         <font>
+            <Font size="20.0" />
+         </font></Label>
+      <Label fx:id="l_numberE" alignment="CENTER" layoutX="943.0" layoutY="681.0" prefHeight="52.0" prefWidth="137.0" style="-fx-background-color: #dad7d5;">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font></Label>
+      <Button layoutX="1298.0" layoutY="508.0" mnemonicParsing="false" onAction="#adddep" prefHeight="31.0" prefWidth="187.0" style="-fx-background-radius: 20;" text="Addition">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font></Button>
+      <Button layoutX="812.0" layoutY="508.0" mnemonicParsing="false" onAction="#refresh" prefHeight="31.0" prefWidth="187.0" style="-fx-background-radius: 20;" text="Refresh">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font></Button>
+      <Button layoutX="1052.0" layoutY="508.0" mnemonicParsing="false" onAction="#deledep" prefHeight="31.0" prefWidth="187.0" style="-fx-background-radius: 20;" text="Deletion">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font></Button>
+      <TextField fx:id="txt_numberD" layoutX="1298.0" layoutY="576.0" promptText="Number of Department" />
+      <TextField fx:id="txt_ND" layoutX="1298.0" layoutY="629.0" promptText="Name of Department" />
+      <TextField fx:id="txt_ID_MAna" layoutX="1298.0" layoutY="681.0" promptText="Manager" />
+      <TextField fx:id="txt_loc" layoutX="1298.0" layoutY="737.0" promptText="Location" />
+      <TextField fx:id="txt_DateM" layoutX="1298.0" layoutY="790.0" promptText="Start Manage" />
+      <Button fx:id="back_emp" layoutX="67.0" layoutY="737.0" mnemonicParsing="false" onAction="#backtoemp" prefHeight="43.0" prefWidth="187.0" style="-fx-background-radius: 20;" text="Go Back">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font></Button>
+   </children>
+</AnchorPane>
