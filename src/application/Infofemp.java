@@ -41,7 +41,7 @@ public class Infofemp implements Initializable  {
 	   // variables to join with data base 
 	    private String dbURL;
 		private String dbUsername = "root";
-		private String dbPassword = "baraamer70";
+		private String dbPassword = "bbb123";
 		private String URL = "127.0.0.1";
 		private String port = "3306";
 		private String dbName = "student_project";
